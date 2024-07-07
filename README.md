@@ -22,3 +22,15 @@ docker compose exec -it app sh
 ```
 php artisan migrate
 ```
+
+### 3. Run Laravel App
+```
+https://localhost
+or 
+https://laravel.test/
+```
+
+### 4. Run PhpMyAdmin
+```
+http://localhost:8080/
+```
