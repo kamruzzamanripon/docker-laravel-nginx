@@ -8,12 +8,17 @@
   </a>
 </p>
 
-### Run docker compose
+### 1. Run docker compose
 
 ```
 docker compose up --build
 ```
 
-### Run docker shell
+### 2. Run docker shell
+
 ```
 docker compose exec -it app sh
+```
+```
+php artisan migrate
+```
