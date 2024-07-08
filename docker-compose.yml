@@ -44,7 +44,10 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - ./docker-compose/mysql:/var/lib/mysql
+      - ./docker-compose/mysql/data:/var/lib/mysql
+      - ./docker-compose/mysql/logs:/var/log/mysql
+      
+      - ./docker-compose/mysql/ql:/docker-entrypoint-initdb.d
     networks:
       - laravel
 ####################################################################################################
